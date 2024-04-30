@@ -10,6 +10,7 @@ usemathjax: true
 # Value-Penalized Auxiliary Control from Examples **(VPACE)** for Learning without Rewards or Demonstrations
 {: .no_toc }
 
+[<i class="fa fa-github" aria-hidden="true"></i> Github](https://github.com/vpace-anon/vpace){: .btn .btn-green }
 
 ### Anonymous Author(s)<sup>1</sup>
 {: .no_toc }
@@ -31,10 +32,796 @@ usemathjax: true
 1. TOC
 {:toc}
 
-## Final Performance
+## Exploratory Episodes over Time
+
+### Unstack-Stack
+{::nomarkdown}
+<div style='text-align:center'>
+    <table>
+        <tr>
+            <!-- <td style="width: 12px; min-width:10px"></td> -->
+            <td style="width: 10px; min-width:8px"></td>
+            <td> <font size="+1"> <b>VPACE</b> </font> </td>
+            <td> SQIL </td>
+            <td> RCE </td>
+            <td> DAC </td>
+        </tr>
+        <tr>
+            <td style="width: 10px; min-width: 8px; max-width: 40px">
+                <!-- <div style=" transform: rotate(-90deg); white-space: nowrap"> -->
+                <div style=" transform: rotate(-90deg); width: 100px; height: 100px">
+                    100k steps
+                </div>
+            </td>
+            <td>
+                <video width='100%' autoplay loop muted>
+                    <source src='/assets/vpace/vids/unstack_stack_env_only_no_move_0/multi-sqil/02_eps_2-0x_sto_100000steps.mp4' type='video/mp4'>
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+            <td>
+                <video width='100%' autoplay loop muted>
+                    <source src='/assets/vpace/vids/unstack_stack_env_only_no_move_0/sqil-no-vp/02_eps_2-0x_sto_100000steps.mp4'>
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+            <td>
+                <video width='100%' autoplay loop muted>
+                    <source src='/assets/vpace/vids/unstack_stack_env_only_no_move_0/rce/02_eps_2-0x_sto_100000steps.mp4' type='video/mp4'>
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+            <td>
+                <video width='100%' autoplay loop muted>
+                    <source src='/assets/vpace/vids/unstack_stack_env_only_no_move_0/disc/02_eps_2-0x_sto_100000steps.mp4' type='video/mp4'>
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 10px; min-width: 8px; max-width: 40px">
+                <!-- <div style=" transform: rotate(-90deg); white-space: nowrap"> -->
+                <div style=" transform: rotate(-90deg); width: 100px; height: 100px">
+                    200k steps
+                </div>
+            </td>
+            <td>
+                <video width='100%' autoplay loop muted>
+                    <source src='/assets/vpace/vids/unstack_stack_env_only_no_move_0/multi-sqil/02_eps_2-0x_sto_200000steps.mp4' type='video/mp4'>
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+            <td>
+                <video width='100%' autoplay loop muted>
+                    <source src='/assets/vpace/vids/unstack_stack_env_only_no_move_0/sqil-no-vp/02_eps_2-0x_sto_200000steps.mp4'>
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+            <td>
+                <video width='100%' autoplay loop muted>
+                    <source src='/assets/vpace/vids/unstack_stack_env_only_no_move_0/rce/02_eps_2-0x_sto_200000steps.mp4' type='video/mp4'>
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+            <td>
+                <video width='100%' autoplay loop muted>
+                    <source src='/assets/vpace/vids/unstack_stack_env_only_no_move_0/disc/02_eps_2-0x_sto_200000steps.mp4' type='video/mp4'>
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+            <tr>
+            <td style="width: 10px; min-width: 8px; max-width: 40px">
+                <!-- <div style=" transform: rotate(-90deg); white-space: nowrap"> -->
+                <div style=" transform: rotate(-90deg); width: 100px; height: 100px">
+                    300k steps
+                </div>
+            </td>
+            <td>
+                <video width='100%' autoplay loop muted>
+                    <source src='/assets/vpace/vids/unstack_stack_env_only_no_move_0/multi-sqil/02_eps_2-0x_sto_300000steps.mp4' type='video/mp4'>
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+            <td>
+                <video width='100%' autoplay loop muted>
+                    <source src='/assets/vpace/vids/unstack_stack_env_only_no_move_0/sqil-no-vp/02_eps_2-0x_sto_300000steps.mp4'>
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+            <td>
+                <video width='100%' autoplay loop muted>
+                    <source src='/assets/vpace/vids/unstack_stack_env_only_no_move_0/rce/02_eps_2-0x_sto_300000steps.mp4' type='video/mp4'>
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+            <td>
+                <video width='100%' autoplay loop muted>
+                    <source src='/assets/vpace/vids/unstack_stack_env_only_no_move_0/disc/02_eps_2-0x_sto_300000steps.mp4' type='video/mp4'>
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+        </tr>
+        </tr>
+    </table>
+</div>
+{:/}
+
+### Insert
+{::nomarkdown}
+<div style='text-align:center'>
+    <table>
+        <tr>
+            <!-- <td style="width: 12px; min-width:10px"></td> -->
+            <td style="width: 10px; min-width:8px"></td>
+            <td> <font size="+1"> <b>VPACE</b> </font> </td>
+            <td> SQIL </td>
+            <td> RCE </td>
+            <td> DAC </td>
+        </tr>
+        <tr>
+            <td style="width: 10px; min-width: 8px; max-width: 40px">
+                <!-- <div style=" transform: rotate(-90deg); white-space: nowrap"> -->
+                <div style=" transform: rotate(-90deg); width: 100px; height: 100px">
+                    100k steps
+                </div>
+            </td>
+            <td>
+                <video width='100%' autoplay loop muted>
+                    <source src='/assets/vpace/vids/insert_no_bring_no_move_0/multi-sqil/02_eps_2-0x_sto_100000steps.mp4' type='video/mp4'>
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+            <td>
+                <video width='100%' autoplay loop muted>
+                    <source src='/assets/vpace/vids/insert_no_bring_no_move_0/sqil-no-vp/02_eps_2-0x_sto_100000steps.mp4'>
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+            <td>
+                <video width='100%' autoplay loop muted>
+                    <source src='/assets/vpace/vids/insert_no_bring_no_move_0/rce/02_eps_2-0x_sto_100000steps.mp4' type='video/mp4'>
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+            <td>
+                <video width='100%' autoplay loop muted>
+                    <source src='/assets/vpace/vids/insert_no_bring_no_move_0/disc/02_eps_2-0x_sto_100000steps.mp4' type='video/mp4'>
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 10px; min-width: 8px; max-width: 40px">
+                <!-- <div style=" transform: rotate(-90deg); white-space: nowrap"> -->
+                <div style=" transform: rotate(-90deg); width: 100px; height: 100px">
+                    200k steps
+                </div>
+            </td>
+            <td>
+                <video width='100%' autoplay loop muted>
+                    <source src='/assets/vpace/vids/insert_no_bring_no_move_0/multi-sqil/02_eps_2-0x_sto_200000steps.mp4' type='video/mp4'>
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+            <td>
+                <video width='100%' autoplay loop muted>
+                    <source src='/assets/vpace/vids/insert_no_bring_no_move_0/sqil-no-vp/02_eps_2-0x_sto_200000steps.mp4'>
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+            <td>
+                <video width='100%' autoplay loop muted>
+                    <source src='/assets/vpace/vids/insert_no_bring_no_move_0/rce/02_eps_2-0x_sto_200000steps.mp4' type='video/mp4'>
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+            <td>
+                <video width='100%' autoplay loop muted>
+                    <source src='/assets/vpace/vids/insert_no_bring_no_move_0/disc/02_eps_2-0x_sto_200000steps.mp4' type='video/mp4'>
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+            <tr>
+            <td style="width: 10px; min-width: 8px; max-width: 40px">
+                <!-- <div style=" transform: rotate(-90deg); white-space: nowrap"> -->
+                <div style=" transform: rotate(-90deg); width: 100px; height: 100px">
+                    300k steps
+                </div>
+            </td>
+            <td>
+                <video width='100%' autoplay loop muted>
+                    <source src='/assets/vpace/vids/insert_no_bring_no_move_0/multi-sqil/02_eps_2-0x_sto_300000steps.mp4' type='video/mp4'>
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+            <td>
+                <video width='100%' autoplay loop muted>
+                    <source src='/assets/vpace/vids/insert_no_bring_no_move_0/sqil-no-vp/02_eps_2-0x_sto_300000steps.mp4'>
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+            <td>
+                <video width='100%' autoplay loop muted>
+                    <source src='/assets/vpace/vids/insert_no_bring_no_move_0/rce/02_eps_2-0x_sto_300000steps.mp4' type='video/mp4'>
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+            <td>
+                <video width='100%' autoplay loop muted>
+                    <source src='/assets/vpace/vids/insert_no_bring_no_move_0/disc/02_eps_2-0x_sto_300000steps.mp4' type='video/mp4'>
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+        </tr>
+        </tr>
+    </table>
+</div>
+{:/}
+
+### sawyer_drawer_open
+{::nomarkdown}
+<div style='text-align:center'>
+    <table>
+        <tr>
+            <!-- <td style="width: 12px; min-width:10px"></td> -->
+            <td style="width: 10px; min-width:8px"></td>
+            <td> <font size="+1"> <b>VPACE</b> </font> </td>
+            <td> SQIL </td>
+            <td> RCE </td>
+            <td> DAC </td>
+        </tr>
+        <tr>
+            <td style="width: 10px; min-width: 8px; max-width: 40px">
+                <!-- <div style=" transform: rotate(-90deg); white-space: nowrap"> -->
+                <div style=" transform: rotate(-90deg); width: 100px; height: 100px">
+                    50k steps
+                </div>
+            </td>
+            <td>
+                <video width='100%' autoplay loop muted>
+                    <source src='/assets/vpace/vids/sawyer_drawer_open/multi-sqil/02_eps_2-0x_sto_50000steps.mp4' type='video/mp4'>
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+            <td>
+                <video width='100%' autoplay loop muted>
+                    <source src='/assets/vpace/vids/sawyer_drawer_open/sqil-no-vp/02_eps_2-0x_sto_50000steps.mp4'>
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+            <td>
+                <video width='100%' autoplay loop muted>
+                    <source src='/assets/vpace/vids/sawyer_drawer_open/rce/02_eps_2-0x_sto_50000steps.mp4' type='video/mp4'>
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+            <td>
+                <video width='100%' autoplay loop muted>
+                    <source src='/assets/vpace/vids/sawyer_drawer_open/disc/02_eps_2-0x_sto_50000steps.mp4' type='video/mp4'>
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 10px; min-width: 8px; max-width: 40px">
+                <!-- <div style=" transform: rotate(-90deg); white-space: nowrap"> -->
+                <div style=" transform: rotate(-90deg); width: 100px; height: 100px">
+                    100k steps
+                </div>
+            </td>
+            <td>
+                <video width='100%' autoplay loop muted>
+                    <source src='/assets/vpace/vids/sawyer_drawer_open/multi-sqil/02_eps_2-0x_sto_100000steps.mp4' type='video/mp4'>
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+            <td>
+                <video width='100%' autoplay loop muted>
+                    <source src='/assets/vpace/vids/sawyer_drawer_open/sqil-no-vp/02_eps_2-0x_sto_100000steps.mp4'>
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+            <td>
+                <video width='100%' autoplay loop muted>
+                    <source src='/assets/vpace/vids/sawyer_drawer_open/rce/02_eps_2-0x_sto_100000steps.mp4' type='video/mp4'>
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+            <td>
+                <video width='100%' autoplay loop muted>
+                    <source src='/assets/vpace/vids/sawyer_drawer_open/disc/02_eps_2-0x_sto_100000steps.mp4' type='video/mp4'>
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+            <tr>
+            <td style="width: 10px; min-width: 8px; max-width: 40px">
+                <!-- <div style=" transform: rotate(-90deg); white-space: nowrap"> -->
+                <div style=" transform: rotate(-90deg); width: 100px; height: 100px">
+                    150k steps
+                </div>
+            </td>
+            <td>
+                <video width='100%' autoplay loop muted>
+                    <source src='/assets/vpace/vids/sawyer_drawer_open/multi-sqil/02_eps_2-0x_sto_150000steps.mp4' type='video/mp4'>
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+            <td>
+                <video width='100%' autoplay loop muted>
+                    <source src='/assets/vpace/vids/sawyer_drawer_open/sqil-no-vp/02_eps_2-0x_sto_150000steps.mp4'>
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+            <td>
+                <video width='100%' autoplay loop muted>
+                    <source src='/assets/vpace/vids/sawyer_drawer_open/rce/02_eps_2-0x_sto_150000steps.mp4' type='video/mp4'>
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+            <td>
+                <video width='100%' autoplay loop muted>
+                    <source src='/assets/vpace/vids/sawyer_drawer_open/disc/02_eps_2-0x_sto_150000steps.mp4' type='video/mp4'>
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+        </tr>
+        </tr>
+    </table>
+</div>
+{:/}
+
+### sawyer_box_close
+{::nomarkdown}
+<div style='text-align:center'>
+    <table>
+        <tr>
+            <!-- <td style="width: 12px; min-width:10px"></td> -->
+            <td style="width: 10px; min-width:8px"></td>
+            <td> <font size="+1"> <b>VPACE</b> </font> </td>
+            <td> SQIL </td>
+            <td> RCE </td>
+            <td> DAC </td>
+        </tr>
+        <tr>
+            <td style="width: 10px; min-width: 8px; max-width: 40px">
+                <!-- <div style=" transform: rotate(-90deg); white-space: nowrap"> -->
+                <div style=" transform: rotate(-90deg); width: 100px; height: 100px">
+                    50k steps
+                </div>
+            </td>
+            <td>
+                <video width='100%' autoplay loop muted>
+                    <source src='/assets/vpace/vids/sawyer_box_close/multi-sqil/02_eps_2-0x_sto_50000steps.mp4' type='video/mp4'>
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+            <td>
+                <video width='100%' autoplay loop muted>
+                    <source src='/assets/vpace/vids/sawyer_box_close/sqil-no-vp/02_eps_2-0x_sto_50000steps.mp4'>
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+            <td>
+                <video width='100%' autoplay loop muted>
+                    <source src='/assets/vpace/vids/sawyer_box_close/rce/02_eps_2-0x_sto_50000steps.mp4' type='video/mp4'>
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+            <td>
+                <video width='100%' autoplay loop muted>
+                    <source src='/assets/vpace/vids/sawyer_box_close/disc/02_eps_2-0x_sto_50000steps.mp4' type='video/mp4'>
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 10px; min-width: 8px; max-width: 40px">
+                <!-- <div style=" transform: rotate(-90deg); white-space: nowrap"> -->
+                <div style=" transform: rotate(-90deg); width: 100px; height: 100px">
+                    100k steps
+                </div>
+            </td>
+            <td>
+                <video width='100%' autoplay loop muted>
+                    <source src='/assets/vpace/vids/sawyer_box_close/multi-sqil/02_eps_2-0x_sto_100000steps.mp4' type='video/mp4'>
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+            <td>
+                <video width='100%' autoplay loop muted>
+                    <source src='/assets/vpace/vids/sawyer_box_close/sqil-no-vp/02_eps_2-0x_sto_100000steps.mp4'>
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+            <td>
+                <video width='100%' autoplay loop muted>
+                    <source src='/assets/vpace/vids/sawyer_box_close/rce/02_eps_2-0x_sto_100000steps.mp4' type='video/mp4'>
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+            <td>
+                <video width='100%' autoplay loop muted>
+                    <source src='/assets/vpace/vids/sawyer_box_close/disc/02_eps_2-0x_sto_100000steps.mp4' type='video/mp4'>
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+            <tr>
+            <td style="width: 10px; min-width: 8px; max-width: 40px">
+                <!-- <div style=" transform: rotate(-90deg); white-space: nowrap"> -->
+                <div style=" transform: rotate(-90deg); width: 100px; height: 100px">
+                    150k steps
+                </div>
+            </td>
+            <td>
+                <video width='100%' autoplay loop muted>
+                    <source src='/assets/vpace/vids/sawyer_box_close/multi-sqil/02_eps_2-0x_sto_150000steps.mp4' type='video/mp4'>
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+            <td>
+                <video width='100%' autoplay loop muted>
+                    <source src='/assets/vpace/vids/sawyer_box_close/sqil-no-vp/02_eps_2-0x_sto_150000steps.mp4'>
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+            <td>
+                <video width='100%' autoplay loop muted>
+                    <source src='/assets/vpace/vids/sawyer_box_close/rce/02_eps_2-0x_sto_150000steps.mp4' type='video/mp4'>
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+            <td>
+                <video width='100%' autoplay loop muted>
+                    <source src='/assets/vpace/vids/sawyer_box_close/disc/02_eps_2-0x_sto_150000steps.mp4' type='video/mp4'>
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+        </tr>
+        </tr>
+    </table>
+</div>
+{:/}
+
+### sawyer_bin_picking
+{::nomarkdown}
+<div style='text-align:center'>
+    <table>
+        <tr>
+            <!-- <td style="width: 12px; min-width:10px"></td> -->
+            <td style="width: 10px; min-width:8px"></td>
+            <td> <font size="+1"> <b>VPACE</b> </font> </td>
+            <td> SQIL </td>
+            <td> RCE </td>
+            <td> DAC </td>
+        </tr>
+        <tr>
+            <td style="width: 10px; min-width: 8px; max-width: 40px">
+                <!-- <div style=" transform: rotate(-90deg); white-space: nowrap"> -->
+                <div style=" transform: rotate(-90deg); width: 100px; height: 100px">
+                    50k steps
+                </div>
+            </td>
+            <td>
+                <video width='100%' autoplay loop muted>
+                    <source src='/assets/vpace/vids/sawyer_bin_picking/multi-sqil/02_eps_2-0x_sto_50000steps.mp4' type='video/mp4'>
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+            <td>
+                <video width='100%' autoplay loop muted>
+                    <source src='/assets/vpace/vids/sawyer_bin_picking/sqil-no-vp/02_eps_2-0x_sto_50000steps.mp4'>
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+            <td>
+                <video width='100%' autoplay loop muted>
+                    <source src='/assets/vpace/vids/sawyer_bin_picking/rce/02_eps_2-0x_sto_50000steps.mp4' type='video/mp4'>
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+            <td>
+                <video width='100%' autoplay loop muted>
+                    <source src='/assets/vpace/vids/sawyer_bin_picking/disc/02_eps_2-0x_sto_50000steps.mp4' type='video/mp4'>
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 10px; min-width: 8px; max-width: 40px">
+                <!-- <div style=" transform: rotate(-90deg); white-space: nowrap"> -->
+                <div style=" transform: rotate(-90deg); width: 100px; height: 100px">
+                    100k steps
+                </div>
+            </td>
+            <td>
+                <video width='100%' autoplay loop muted>
+                    <source src='/assets/vpace/vids/sawyer_bin_picking/multi-sqil/02_eps_2-0x_sto_100000steps.mp4' type='video/mp4'>
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+            <td>
+                <video width='100%' autoplay loop muted>
+                    <source src='/assets/vpace/vids/sawyer_bin_picking/sqil-no-vp/02_eps_2-0x_sto_100000steps.mp4'>
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+            <td>
+                <video width='100%' autoplay loop muted>
+                    <source src='/assets/vpace/vids/sawyer_bin_picking/rce/02_eps_2-0x_sto_100000steps.mp4' type='video/mp4'>
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+            <td>
+                <video width='100%' autoplay loop muted>
+                    <source src='/assets/vpace/vids/sawyer_bin_picking/disc/02_eps_2-0x_sto_100000steps.mp4' type='video/mp4'>
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+            <tr>
+            <td style="width: 10px; min-width: 8px; max-width: 40px">
+                <!-- <div style=" transform: rotate(-90deg); white-space: nowrap"> -->
+                <div style=" transform: rotate(-90deg); width: 100px; height: 100px">
+                    150k steps
+                </div>
+            </td>
+            <td>
+                <video width='100%' autoplay loop muted>
+                    <source src='/assets/vpace/vids/sawyer_bin_picking/multi-sqil/02_eps_2-0x_sto_150000steps.mp4' type='video/mp4'>
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+            <td>
+                <video width='100%' autoplay loop muted>
+                    <source src='/assets/vpace/vids/sawyer_bin_picking/sqil-no-vp/02_eps_2-0x_sto_150000steps.mp4'>
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+            <td>
+                <video width='100%' autoplay loop muted>
+                    <source src='/assets/vpace/vids/sawyer_bin_picking/rce/02_eps_2-0x_sto_150000steps.mp4' type='video/mp4'>
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+            <td>
+                <video width='100%' autoplay loop muted>
+                    <source src='/assets/vpace/vids/sawyer_bin_picking/disc/02_eps_2-0x_sto_150000steps.mp4' type='video/mp4'>
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+        </tr>
+        </tr>
+    </table>
+</div>
+{:/}
+
+### hammer-human-v0-dp
+{::nomarkdown}
+<div style='text-align:center'>
+    <table>
+        <tr>
+            <!-- <td style="width: 12px; min-width:10px"></td> -->
+            <td style="width: 10px; min-width:8px"></td>
+            <td> <font size="+1"> <b>VPACE</b> </font> </td>
+            <td> SQIL </td>
+            <td> RCE </td>
+            <td> DAC </td>
+        </tr>
+        <tr>
+            <td style="width: 10px; min-width: 8px; max-width: 40px">
+                <!-- <div style=" transform: rotate(-90deg); white-space: nowrap"> -->
+                <div style=" transform: rotate(-90deg); width: 100px; height: 100px">
+                    200k steps
+                </div>
+            </td>
+            <td>
+                <video width='100%' autoplay loop muted>
+                    <source src='/assets/vpace/vids/hammer-human-v0-dp/multi-sqil/02_eps_2-0x_sto_200000steps.mp4' type='video/mp4'>
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+            <td>
+                <video width='100%' autoplay loop muted>
+                    <source src='/assets/vpace/vids/hammer-human-v0-dp/sqil-no-vp/02_eps_2-0x_sto_200000steps.mp4'>
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+            <td>
+                <video width='100%' autoplay loop muted>
+                    <source src='/assets/vpace/vids/hammer-human-v0-dp/rce/02_eps_2-0x_sto_200000steps.mp4' type='video/mp4'>
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+            <td>
+                <video width='100%' autoplay loop muted>
+                    <source src='/assets/vpace/vids/hammer-human-v0-dp/disc/02_eps_2-0x_sto_200000steps.mp4' type='video/mp4'>
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 10px; min-width: 8px; max-width: 40px">
+                <!-- <div style=" transform: rotate(-90deg); white-space: nowrap"> -->
+                <div style=" transform: rotate(-90deg); width: 100px; height: 100px">
+                    400k steps
+                </div>
+            </td>
+            <td>
+                <video width='100%' autoplay loop muted>
+                    <source src='/assets/vpace/vids/hammer-human-v0-dp/multi-sqil/02_eps_2-0x_sto_400000steps.mp4' type='video/mp4'>
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+            <td>
+                <video width='100%' autoplay loop muted>
+                    <source src='/assets/vpace/vids/hammer-human-v0-dp/sqil-no-vp/02_eps_2-0x_sto_400000steps.mp4'>
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+            <td>
+                <video width='100%' autoplay loop muted>
+                    <source src='/assets/vpace/vids/hammer-human-v0-dp/rce/02_eps_2-0x_sto_400000steps.mp4' type='video/mp4'>
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+            <td>
+                <video width='100%' autoplay loop muted>
+                    <source src='/assets/vpace/vids/hammer-human-v0-dp/disc/02_eps_2-0x_sto_400000steps.mp4' type='video/mp4'>
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+            <tr>
+            <td style="width: 10px; min-width: 8px; max-width: 40px">
+                <!-- <div style=" transform: rotate(-90deg); white-space: nowrap"> -->
+                <div style=" transform: rotate(-90deg); width: 100px; height: 100px">
+                    600k steps
+                </div>
+            </td>
+            <td>
+                <video width='100%' autoplay loop muted>
+                    <source src='/assets/vpace/vids/hammer-human-v0-dp/multi-sqil/02_eps_2-0x_sto_600000steps.mp4' type='video/mp4'>
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+            <td>
+                <video width='100%' autoplay loop muted>
+                    <source src='/assets/vpace/vids/hammer-human-v0-dp/sqil-no-vp/02_eps_2-0x_sto_600000steps.mp4'>
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+            <td>
+                <video width='100%' autoplay loop muted>
+                    <source src='/assets/vpace/vids/hammer-human-v0-dp/rce/02_eps_2-0x_sto_600000steps.mp4' type='video/mp4'>
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+            <td>
+                <video width='100%' autoplay loop muted>
+                    <source src='/assets/vpace/vids/hammer-human-v0-dp/disc/02_eps_2-0x_sto_600000steps.mp4' type='video/mp4'>
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+        </tr>
+        </tr>
+    </table>
+</div>
+{:/}
+
+### relocate-human-v0-najp-dp
+{::nomarkdown}
+<div style='text-align:center'>
+    <table>
+        <tr>
+            <!-- <td style="width: 12px; min-width:10px"></td> -->
+            <td style="width: 10px; min-width:8px"></td>
+            <td> <font size="+1"> <b>VPACE</b> </font> </td>
+            <td> SQIL </td>
+            <td> RCE </td>
+            <td> DAC </td>
+        </tr>
+        <tr>
+            <td style="width: 10px; min-width: 8px; max-width: 40px">
+                <!-- <div style=" transform: rotate(-90deg); white-space: nowrap"> -->
+                <div style=" transform: rotate(-90deg); width: 100px; height: 100px">
+                    300k steps
+                </div>
+            </td>
+            <td>
+                <video width='100%' autoplay loop muted>
+                    <source src='/assets/vpace/vids/relocate-human-v0-najp-dp/multi-sqil/02_eps_2-0x_sto_300000steps.mp4' type='video/mp4'>
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+            <td>
+                <video width='100%' autoplay loop muted>
+                    <source src='/assets/vpace/vids/relocate-human-v0-najp-dp/sqil-no-vp/02_eps_2-0x_sto_300000steps.mp4'>
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+            <td>
+                <video width='100%' autoplay loop muted>
+                    <source src='/assets/vpace/vids/relocate-human-v0-najp-dp/rce/02_eps_2-0x_sto_300000steps.mp4' type='video/mp4'>
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+            <td>
+                <video width='100%' autoplay loop muted>
+                    <source src='/assets/vpace/vids/relocate-human-v0-najp-dp/disc/02_eps_2-0x_sto_300000steps.mp4' type='video/mp4'>
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 10px; min-width: 8px; max-width: 40px">
+                <!-- <div style=" transform: rotate(-90deg); white-space: nowrap"> -->
+                <div style=" transform: rotate(-90deg); width: 100px; height: 100px">
+                    600k steps
+                </div>
+            </td>
+            <td>
+                <video width='100%' autoplay loop muted>
+                    <source src='/assets/vpace/vids/relocate-human-v0-najp-dp/multi-sqil/02_eps_2-0x_sto_600000steps.mp4' type='video/mp4'>
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+            <td>
+                <video width='100%' autoplay loop muted>
+                    <source src='/assets/vpace/vids/relocate-human-v0-najp-dp/sqil-no-vp/02_eps_2-0x_sto_600000steps.mp4'>
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+            <td>
+                <video width='100%' autoplay loop muted>
+                    <source src='/assets/vpace/vids/relocate-human-v0-najp-dp/rce/02_eps_2-0x_sto_600000steps.mp4' type='video/mp4'>
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+            <td>
+                <video width='100%' autoplay loop muted>
+                    <source src='/assets/vpace/vids/relocate-human-v0-najp-dp/disc/02_eps_2-0x_sto_600000steps.mp4' type='video/mp4'>
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+            <tr>
+            <td style="width: 10px; min-width: 8px; max-width: 40px">
+                <!-- <div style=" transform: rotate(-90deg); white-space: nowrap"> -->
+                <div style=" transform: rotate(-90deg); width: 100px; height: 100px">
+                    900k steps
+                </div>
+            </td>
+            <td>
+                <video width='100%' autoplay loop muted>
+                    <source src='/assets/vpace/vids/relocate-human-v0-najp-dp/multi-sqil/02_eps_2-0x_sto_900000steps.mp4' type='video/mp4'>
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+            <td>
+                <video width='100%' autoplay loop muted>
+                    <source src='/assets/vpace/vids/relocate-human-v0-najp-dp/sqil-no-vp/02_eps_2-0x_sto_900000steps.mp4'>
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+            <td>
+                <video width='100%' autoplay loop muted>
+                    <source src='/assets/vpace/vids/relocate-human-v0-najp-dp/rce/02_eps_2-0x_sto_900000steps.mp4' type='video/mp4'>
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+            <td>
+                <video width='100%' autoplay loop muted>
+                    <source src='/assets/vpace/vids/relocate-human-v0-najp-dp/disc/02_eps_2-0x_sto_600000steps.mp4' type='video/mp4'>
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+        </tr>
+        </tr>
+    </table>
+</div>
+{:/}
+
+## Final Performance (All Tasks)
 
 ### Panda Hard Tasks
-{::nomarkdown} 
+{::nomarkdown}
 <div style='text-align:center'>
     <table>
         <tr>
