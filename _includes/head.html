@@ -1,0 +1,60 @@
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+  {% if site.plugins.jekyll-seo == nil %}
+    <title>{{ page.title }} - {{ site.title }}</title>
+
+    {% if page.description %}
+      <meta name="Description" content="{{ page.description }}">
+    {% endif %}
+  {% endif %}
+
+  <link rel="shortcut icon" href="{{ '/assets/favicon.ico' | relative_url }}" type="image/x-icon">
+
+  <link rel="stylesheet" href="{{ '/assets/css/just-the-docs-light.css' | absolute_url }}">
+
+  {% if site.ga_tracking != nil %}
+    <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.ga_tracking }}"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', "{{ site.ga_tracking }}");
+    </script>
+
+  {% endif %}
+
+  {% if site.search_enabled != false %}
+    <script type="text/javascript" src="{{ '/assets/js/vendor/lunr.min.js' | absolute_url }}"></script>
+  {% endif %}
+  <script type="text/javascript" src="{{ '/assets/js/just-the-docs.js' | absolute_url }}"></script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  {% seo %}
+
+  {% include head_custom.html %}
+
+  <!-- for mathjax support -->
+  {% if page.usemathjax %}
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+      TeX: { equationNumbers: { autoNumber: "AMS" } }
+      });
+    </script>
+    <script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  {% endif %}
+
+  <!-- fix blurry images -->
+  <link rel="stylesheet" href="{{ '/assets/custom_css/image_fix.css' | absolute_url }}">
+
+  <!-- per page css-->
+  {% if page.custom_css %}
+    {% for stylesheet in page.custom_css %}
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/{{ stylesheet }}.css">
+    {% endfor %}
+  {% endif %}
+
+</head>

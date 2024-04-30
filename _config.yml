@@ -1,0 +1,20 @@
+remote_theme: just-the-docs/just-the-docs
+title: VPACE -- Supplementary Material
+description: Anonymous webpage for submission
+baseurl: "/" # the subpath of your site, e.g. /blog
+url: "https://vpace-anon.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+footer_content: "Anonymous submission"
+
+search_enabled: false
+
+include:
+  - _pages                  # all your pages can be put inside pages (except articles)
+
+exclude:
+  - README.md
+
+plugins:
+  - jekyll-remote-theme
+  - jekyll-font-awesome-sass
+
+markdown: kramdown  # for mathjax, on posts where you want to use it add "usemathjax: true" to the top

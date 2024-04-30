@@ -1,0 +1,6 @@
+img { image-rendering: -webkit-optimize-contrast; }
+
+rotate-text {
+   writing-mode: vertical-lr;
+   transform: scale(-1, -1);
+}
