@@ -4,7 +4,6 @@ title: VPACE for Learning without Rewards or Demonstrations (CoRL 2024)
 subtitle: Value-Penalized Auxiliary Control from Examples for Learning without Rewards or Demonstrations
 description: CoRL Submission on Learning from examples (i.e. no rewards or full-trajectory demonstrations) using value-penalization and auxiliary control.
 nav_exclude: true
-usemathjax: true
 ---
 
 # Value-Penalized Auxiliary Control from Examples **(VPACE)** for Learning without Rewards or Demonstrations
