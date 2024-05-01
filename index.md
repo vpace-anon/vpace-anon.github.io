@@ -817,7 +817,429 @@ nav_exclude: true
 </div>
 {:/}
 
-## Final Performance (All Tasks)
+## Success Examples for Training
+The numerical state data corresponding to these example success images was the only signal (i.e., no reward function and no full trajectories) used for training policies in this work.
+We also show examples from the initial state distributions.
+
+### Panda Tasks
+{::nomarkdown}
+<div style='text-align:center'>
+    <table>
+        <tr>
+            <td> Initial State (Shared) </td>
+            <td> Initial State (Unstack-Stack) </td>
+            <td> Release </td>
+            <td> Grasp </td>
+        </tr>
+        <tr>
+            <td>
+                <video width='100%' autoplay loop muted>
+                    <source src='/assets/vpace/vids/reset_success_examples/bring_no_move_0_05_eps_reset.mp4' type='video/mp4'>
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+            <td>
+                <video width='100%' autoplay loop muted>
+                    <source src='/assets/vpace/vids/reset_success_examples/unstack_stack_env_only_no_move_0_05_eps_reset.mp4'>
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+            <td>
+                <video width='100%' autoplay loop muted>
+                    <source src='/assets/vpace/vids/reset_success_examples/open_reach_05_eps_success.mp4' type='video/mp4'>
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+            <td>
+                <video width='100%' autoplay loop muted>
+                    <source src='/assets/vpace/vids/reset_success_examples/grasp_05_eps_success.mp4' type='video/mp4'>
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+        </tr>
+        <tr>
+            <td> Reach </td>
+            <td> Lift </td>
+            <td> Move </td>
+            <td> Stack/Unstack-Stack </td>
+        </tr>
+        <tr>
+            <td>
+                <video width='100%' autoplay loop muted>
+                    <source src='/assets/vpace/vids/reset_success_examples/reach_0_05_eps_success.mp4' type='video/mp4'>
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+            <td>
+                <video width='100%' autoplay loop muted>
+                    <source src='/assets/vpace/vids/reset_success_examples/lift_0_05_eps_success.mp4'>
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+            <td>
+                <video width='100%' autoplay loop muted>
+                    <source src='/assets/vpace/vids/reset_success_examples/move_obj_0_05_eps_success.mp4' type='video/mp4'>
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+            <td>
+                <video width='100%' autoplay loop muted>
+                    <source src='/assets/vpace/vids/reset_success_examples/stack_no_move_0_05_eps_success.mp4' type='video/mp4'>
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+        </tr>
+        <tr>
+            <td> Bring </td>
+            <td> Insert </td>
+            <td>  </td>
+            <td>  </td>
+        </tr>
+        <tr>
+            <td>
+                <video width='100%' autoplay loop muted>
+                    <source src='/assets/vpace/vids/reset_success_examples/bring_no_move_0_05_eps_success.mp4' type='video/mp4'>
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+            <td>
+                <video width='100%' autoplay loop muted>
+                    <source src='/assets/vpace/vids/reset_success_examples/insert_no_bring_no_move_0_05_eps_success.mp4'>
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+            <td>
+            </td>
+            <td>
+            </td>
+        </tr>
+    </table>
+</div>
+{:/}
+
+### Sawyer Tasks
+{::nomarkdown}
+<div style='text-align:center'>
+    <table>
+        <tr>
+            <!-- <td style="width: 12px; min-width:10px"></td> -->
+            <td style="width: 10px; min-width:8px"></td>
+            <td> Initial State </td>
+            <td> Reach </td>
+            <td> Grasp </td>
+            <td> Main </td>
+        </tr>
+        <tr>
+            <td style="width: 10px; min-width: 8px; max-width: 40px">
+                <!-- <div style=" transform: rotate(-90deg); white-space: nowrap"> -->
+                <div style=" transform: rotate(-90deg); width: 100px; height: 100px">
+                    Drawer Open
+                </div>
+            </td>
+            <td>
+                <video width='100%' autoplay loop muted>
+                    <source src='/assets/vpace/vids/reset_success_examples/sawyer_drawer_open_05_eps_reset.mp4' type='video/mp4'>
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+            <td>
+                <video width='100%' autoplay loop muted>
+                    <source src='/assets/vpace/vids/reset_success_examples/sawyer_drawer_open_05_eps_reach.mp4' type='video/mp4'>
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+            <td>
+                <video width='100%' autoplay loop muted>
+                    <source src='/assets/vpace/vids/reset_success_examples/sawyer_drawer_open_05_eps_grasp.mp4' type='video/mp4'>
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+            <td>
+                <video width='100%' autoplay loop muted>
+                    <source src='/assets/vpace/vids/reset_success_examples/sawyer_drawer_open_05_eps_success.mp4' type='video/mp4'>
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 10px; min-width: 8px; max-width: 40px">
+                <!-- <div style=" transform: rotate(-90deg); white-space: nowrap"> -->
+                <div style=" transform: rotate(-90deg); width: 100px; height: 100px">
+                    Drawer Close
+                </div>
+            </td>
+            <td>
+                <video width='100%' autoplay loop muted>
+                    <source src='/assets/vpace/vids/reset_success_examples/sawyer_drawer_close_05_eps_reset.mp4' type='video/mp4'>
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+            <td>
+                <video width='100%' autoplay loop muted>
+                    <source src='/assets/vpace/vids/reset_success_examples/sawyer_drawer_close_05_eps_reach.mp4' type='video/mp4'>
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+            <td>
+                <video width='100%' autoplay loop muted>
+                    <source src='/assets/vpace/vids/reset_success_examples/sawyer_drawer_close_05_eps_grasp.mp4' type='video/mp4'>
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+            <td>
+                <video width='100%' autoplay loop muted>
+                    <source src='/assets/vpace/vids/reset_success_examples/sawyer_drawer_close_05_eps_success.mp4' type='video/mp4'>
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 10px; min-width: 8px; max-width: 40px">
+                <!-- <div style=" transform: rotate(-90deg); white-space: nowrap"> -->
+                <div style=" transform: rotate(-90deg); width: 100px; height: 100px">
+                    Push
+                </div>
+            </td>
+            <td>
+                <video width='100%' autoplay loop muted>
+                    <source src='/assets/vpace/vids/reset_success_examples/sawyer_push_05_eps_reset.mp4' type='video/mp4'>
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+            <td>
+                <video width='100%' autoplay loop muted>
+                    <source src='/assets/vpace/vids/reset_success_examples/sawyer_push_05_eps_reach.mp4' type='video/mp4'>
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+            <td>
+                <video width='100%' autoplay loop muted>
+                    <source src='/assets/vpace/vids/reset_success_examples/sawyer_push_05_eps_grasp.mp4' type='video/mp4'>
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+            <td>
+                <video width='100%' autoplay loop muted>
+                    <source src='/assets/vpace/vids/reset_success_examples/sawyer_push_05_eps_success.mp4' type='video/mp4'>
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 10px; min-width: 8px; max-width: 40px">
+                <!-- <div style=" transform: rotate(-90deg); white-space: nowrap"> -->
+                <div style=" transform: rotate(-90deg); width: 100px; height: 100px">
+                    Lift
+                </div>
+            </td>
+            <td>
+                <video width='100%' autoplay loop muted>
+                    <source src='/assets/vpace/vids/reset_success_examples/sawyer_lift_05_eps_reset.mp4' type='video/mp4'>
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+            <td>
+                <video width='100%' autoplay loop muted>
+                    <source src='/assets/vpace/vids/reset_success_examples/sawyer_lift_05_eps_reach.mp4' type='video/mp4'>
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+            <td>
+                <video width='100%' autoplay loop muted>
+                    <source src='/assets/vpace/vids/reset_success_examples/sawyer_lift_05_eps_grasp.mp4' type='video/mp4'>
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+            <td>
+                <video width='100%' autoplay loop muted>
+                    <source src='/assets/vpace/vids/reset_success_examples/sawyer_lift_05_eps_success.mp4' type='video/mp4'>
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 10px; min-width: 8px; max-width: 40px">
+                <!-- <div style=" transform: rotate(-90deg); white-space: nowrap"> -->
+                <div style=" transform: rotate(-90deg); width: 100px; height: 100px">
+                    Box Close
+                </div>
+            </td>
+            <td>
+                <video width='100%' autoplay loop muted>
+                    <source src='/assets/vpace/vids/reset_success_examples/sawyer_box_close_05_eps_reset.mp4' type='video/mp4'>
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+            <td>
+                <video width='100%' autoplay loop muted>
+                    <source src='/assets/vpace/vids/reset_success_examples/sawyer_box_close_05_eps_reach.mp4' type='video/mp4'>
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+            <td>
+                <video width='100%' autoplay loop muted>
+                    <source src='/assets/vpace/vids/reset_success_examples/sawyer_box_close_05_eps_grasp.mp4' type='video/mp4'>
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+            <td>
+                <video width='100%' autoplay loop muted>
+                    <source src='/assets/vpace/vids/reset_success_examples/sawyer_box_close_05_eps_success.mp4' type='video/mp4'>
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 10px; min-width: 8px; max-width: 40px">
+                <!-- <div style=" transform: rotate(-90deg); white-space: nowrap"> -->
+                <div style=" transform: rotate(-90deg); width: 100px; height: 100px">
+                    Bin Picking
+                </div>
+            </td>
+            <td>
+                <video width='100%' autoplay loop muted>
+                    <source src='/assets/vpace/vids/reset_success_examples/sawyer_bin_picking_05_eps_reset.mp4' type='video/mp4'>
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+            <td>
+                <video width='100%' autoplay loop muted>
+                    <source src='/assets/vpace/vids/reset_success_examples/sawyer_bin_picking_05_eps_reach.mp4' type='video/mp4'>
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+            <td>
+                <video width='100%' autoplay loop muted>
+                    <source src='/assets/vpace/vids/reset_success_examples/sawyer_bin_picking_05_eps_grasp.mp4' type='video/mp4'>
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+            <td>
+                <video width='100%' autoplay loop muted>
+                    <source src='/assets/vpace/vids/reset_success_examples/sawyer_bin_picking_05_eps_success.mp4' type='video/mp4'>
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+        </tr>
+    </table>
+</div>
+{:/}
+
+### Adroit Hand Tasks
+The same data was used for the original and the delta-position variants.
+
+{::nomarkdown}
+<div style='text-align:center'>
+    <table>
+        <tr>
+            <!-- <td style="width: 12px; min-width:10px"></td> -->
+            <td style="width: 10px; min-width:8px"></td>
+            <td> Initial State </td>
+            <td> Reach </td>
+            <td> Grasp </td>
+            <td> Main </td>
+        </tr>
+        <tr>
+            <td style="width: 10px; min-width: 8px; max-width: 40px">
+                <!-- <div style=" transform: rotate(-90deg); white-space: nowrap"> -->
+                <div style=" transform: rotate(-90deg); width: 100px; height: 100px">
+                    Door
+                </div>
+            </td>
+            <td>
+                <video width='100%' autoplay loop muted>
+                    <source src='/assets/vpace/vids/reset_success_examples/door-human-v0_05_eps_reset.mp4' type='video/mp4'>
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+            <td>
+                <video width='100%' autoplay loop muted>
+                    <source src='/assets/vpace/vids/reset_success_examples/door-human-v0_05_eps_reach.mp4' type='video/mp4'>
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+            <td>
+                <video width='100%' autoplay loop muted>
+                    <source src='/assets/vpace/vids/reset_success_examples/door-human-v0_05_eps_grasp.mp4' type='video/mp4'>
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+            <td>
+                <video width='100%' autoplay loop muted>
+                    <source src='/assets/vpace/vids/reset_success_examples/door-human-v0_05_eps_success.mp4' type='video/mp4'>
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 10px; min-width: 8px; max-width: 40px">
+                <!-- <div style=" transform: rotate(-90deg); white-space: nowrap"> -->
+                <div style=" transform: rotate(-90deg); width: 100px; height: 100px">
+                    Hammer
+                </div>
+            </td>
+            <td>
+                <video width='100%' autoplay loop muted>
+                    <source src='/assets/vpace/vids/reset_success_examples/hammer-human-v0_05_eps_reset.mp4' type='video/mp4'>
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+            <td>
+                <video width='100%' autoplay loop muted>
+                    <source src='/assets/vpace/vids/reset_success_examples/hammer-human-v0_05_eps_reach.mp4' type='video/mp4'>
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+            <td>
+                <video width='100%' autoplay loop muted>
+                    <source src='/assets/vpace/vids/reset_success_examples/hammer-human-v0_05_eps_grasp.mp4' type='video/mp4'>
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+            <td>
+                <video width='100%' autoplay loop muted>
+                    <source src='/assets/vpace/vids/reset_success_examples/hammer-human-v0_05_eps_success.mp4' type='video/mp4'>
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 10px; min-width: 8px; max-width: 40px">
+                <!-- <div style=" transform: rotate(-90deg); white-space: nowrap"> -->
+                <div style=" transform: rotate(-90deg); width: 100px; height: 100px">
+                    Relocate
+                </div>
+            </td>
+            <td>
+                <video width='100%' autoplay loop muted>
+                    <source src='/assets/vpace/vids/reset_success_examples/relocate-human-v0_05_eps_reset.mp4' type='video/mp4'>
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+            <td>
+                <video width='100%' autoplay loop muted>
+                    <source src='/assets/vpace/vids/reset_success_examples/relocate-human-v0_05_eps_reach.mp4' type='video/mp4'>
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+            <td>
+                <video width='100%' autoplay loop muted>
+                    <source src='/assets/vpace/vids/reset_success_examples/relocate-human-v0_05_eps_grasp.mp4' type='video/mp4'>
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+            <td>
+                <video width='100%' autoplay loop muted>
+                    <source src='/assets/vpace/vids/reset_success_examples/relocate-human-v0_05_eps_success.mp4' type='video/mp4'>
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+        </tr>
+    </table>
+</div>
+{:/}
+
+## Final Performance (All Tasks, VPACE vs. baselines)
 
 ### Panda Hard Tasks
 {::nomarkdown}
