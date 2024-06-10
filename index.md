@@ -31,9 +31,424 @@ nav_exclude: true
 1. TOC
 {:toc}
 
-## Exploratory Episodes over Time
+## Real Panda Results
 
-### Unstack-Stack
+### Exploratory Episodes over Time
+
+#### Door
+{::nomarkdown}
+<div style='text-align:center'>
+    <table>
+        <tr>
+            <!-- <td style="width: 12px; min-width:10px"></td> -->
+            <td style="width: 40px; min-width:38px"></td>
+            <td> <font size="+1"> <b>VPACE</b> </font> </td>
+            <td> SQIL </td>
+            <!-- <td> <font size="+1"> <b>VPACE</b> </font> (timelapse) </td>
+            <td> SQIL (timelapse) </td> -->
+        </tr>
+        <tr>
+            <td style="width: 40px; min-width: 38px; max-width: 60px">
+                <!-- <div style=" transform: rotate(-90deg); white-space: nowrap"> -->
+                <div style=" transform: rotate(-90deg); width: 100px; height: 100px">
+                    40 minutes
+                </div>
+            </td>
+            <td>
+                <video width='100%' autoplay loop muted>
+                    <source src='/assets/vpace/vids/real/door/multi-sqil/10k-exp-120120-1x.mp4' type='video/mp4'>
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+            <td>
+                <video width='100%' autoplay loop muted>
+                    <source src='/assets/vpace/vids/real/door/sqil/10k-exp-1x.mp4'>
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 40px; min-width: 38px; max-width: 60px">
+                <!-- <div style=" transform: rotate(-90deg); white-space: nowrap"> -->
+                <div style=" transform: rotate(-90deg); width: 100px; height: 100px">
+                    40 minutes (timelapse)
+                </div>
+            </td>
+            <td>
+                <video width='100%' autoplay loop muted>
+                    <source src='/assets/vpace/vids/real/door/multi-sqil/10k-explore-timelapse.mp4' type='video/mp4'>
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+            <td>
+                <video width='100%' autoplay loop muted>
+                    <source src='/assets/vpace/vids/real/door/sqil/10k-explore-timelapse.mp4'>
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 40px; min-width: 38px; max-width: 60px">
+                <!-- <div style=" transform: rotate(-90deg); white-space: nowrap"> -->
+                <div style=" transform: rotate(-90deg); width: 100px; height: 100px">
+                    120 minutes
+                </div>
+            </td>
+            <td>
+                <video width='100%' autoplay loop muted>
+                    <source src='/assets/vpace/vids/real/door/multi-sqil/30k-exp-120120-1x.mp4' type='video/mp4'>
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+            <td>
+                <video width='100%' autoplay loop muted>
+                    <source src='/assets/vpace/vids/real/door/sqil/30k-exp-1x.mp4'>
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 40px; min-width: 38px; max-width: 60px">
+                <!-- <div style=" transform: rotate(-90deg); white-space: nowrap"> -->
+                <div style=" transform: rotate(-90deg); width: 100px; height: 100px">
+                    120 minutes (timelapse)
+                </div>
+            </td>
+            <td>
+                <video width='100%' autoplay loop muted>
+                    <source src='/assets/vpace/vids/real/door/multi-sqil/30k-explore-timelapse.mp4' type='video/mp4'>
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+            <td>
+                <video width='100%' autoplay loop muted>
+                    <source src='/assets/vpace/vids/real/door/sqil/30k-explore-timelapse.mp4'>
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 40px; min-width: 38px; max-width: 60px">
+                <!-- <div style=" transform: rotate(-90deg); white-space: nowrap"> -->
+                <div style=" transform: rotate(-90deg); width: 100px; height: 100px">
+                    200 minutes
+                </div>
+            </td>
+            <td>
+                <video width='100%' autoplay loop muted>
+                    <source src='/assets/vpace/vids/real/door/multi-sqil/50k-exp-120120-1x.mp4' type='video/mp4'>
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+            <td>
+                <video width='100%' autoplay loop muted>
+                    <source src='/assets/vpace/vids/real/door/sqil/50k-exp-1x.mp4'>
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 40px; min-width: 38px; max-width: 60px">
+                <!-- <div style=" transform: rotate(-90deg); white-space: nowrap"> -->
+                <div style=" transform: rotate(-90deg); width: 100px; height: 100px">
+                    200 minutes (timelapse)
+                </div>
+            </td>
+            <td>
+                <video width='100%' autoplay loop muted>
+                    <source src='/assets/vpace/vids/real/door/multi-sqil/50k-explore-timelapse.mp4' type='video/mp4'>
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+            <td>
+                <video width='100%' autoplay loop muted>
+                    <source src='/assets/vpace/vids/real/door/sqil/50k-explore-timelapse.mp4'>
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+        </tr>
+    </table>
+</div>
+{:/}
+
+#### Drawer
+{::nomarkdown}
+<div style='text-align:center'>
+    <table>
+        <tr>
+            <!-- <td style="width: 12px; min-width:10px"></td> -->
+            <td style="width: 40px; min-width:38px"></td>
+            <td> <font size="+1"> <b>VPACE</b> </font> </td>
+            <td> SQIL </td>
+            <!-- <td> <font size="+1"> <b>VPACE</b> </font> (timelapse) </td>
+            <td> SQIL (timelapse) </td> -->
+        </tr>
+        <tr>
+            <td style="width: 40px; min-width: 38px; max-width: 60px">
+                <!-- <div style=" transform: rotate(-90deg); white-space: nowrap"> -->
+                <div style=" transform: rotate(-90deg); width: 100px; height: 100px">
+                    20 minutes
+                </div>
+            </td>
+            <td>
+                <video width='100%' autoplay loop muted>
+                    <source src='/assets/vpace/vids/real/drawer/multi-sqil/5k-exp-120120-1x.mp4' type='video/mp4'>
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+            <td>
+                <video width='100%' autoplay loop muted>
+                    <source src='/assets/vpace/vids/real/drawer/sqil/5k-exp-1x.mp4'>
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 40px; min-width: 38px; max-width: 60px">
+                <!-- <div style=" transform: rotate(-90deg); white-space: nowrap"> -->
+                <div style=" transform: rotate(-90deg); width: 100px; height: 100px">
+                    20 minutes (timelapse)
+                </div>
+            </td>
+            <td>
+                <video width='100%' autoplay loop muted>
+                    <source src='/assets/vpace/vids/real/drawer/multi-sqil/5k-explore-timelapse.mp4' type='video/mp4'>
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+            <td>
+                <video width='100%' autoplay loop muted>
+                    <source src='/assets/vpace/vids/real/drawer/sqil/5k-explore-timelapse.mp4'>
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 40px; min-width: 38px; max-width: 60px">
+                <!-- <div style=" transform: rotate(-90deg); white-space: nowrap"> -->
+                <div style=" transform: rotate(-90deg); width: 100px; height: 100px">
+                    60 minutes
+                </div>
+            </td>
+            <td>
+                <video width='100%' autoplay loop muted>
+                    <source src='/assets/vpace/vids/real/drawer/multi-sqil/15k-exp-120120-1x.mp4' type='video/mp4'>
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+            <td>
+                <video width='100%' autoplay loop muted>
+                    <source src='/assets/vpace/vids/real/drawer/sqil/15k-exp-1x.mp4'>
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 40px; min-width: 38px; max-width: 60px">
+                <!-- <div style=" transform: rotate(-90deg); white-space: nowrap"> -->
+                <div style=" transform: rotate(-90deg); width: 100px; height: 100px">
+                    60 minutes (timelapse)
+                </div>
+            </td>
+            <td>
+                <video width='100%' autoplay loop muted>
+                    <source src='/assets/vpace/vids/real/drawer/multi-sqil/15k-explore-timelapse.mp4' type='video/mp4'>
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+            <td>
+                <video width='100%' autoplay loop muted>
+                    <source src='/assets/vpace/vids/real/drawer/sqil/15k-explore-timelapse.mp4'>
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 40px; min-width: 38px; max-width: 60px">
+                <!-- <div style=" transform: rotate(-90deg); white-space: nowrap"> -->
+                <div style=" transform: rotate(-90deg); width: 100px; height: 100px">
+                    100 minutes
+                </div>
+            </td>
+            <td>
+                <video width='100%' autoplay loop muted>
+                    <source src='/assets/vpace/vids/real/drawer/multi-sqil/25k-exp-120120-1x.mp4' type='video/mp4'>
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+            <td>
+                <video width='100%' autoplay loop muted>
+                    <source src='/assets/vpace/vids/real/drawer/sqil/25k-exp-1x.mp4'>
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 40px; min-width: 38px; max-width: 60px">
+                <!-- <div style=" transform: rotate(-90deg); white-space: nowrap"> -->
+                <div style=" transform: rotate(-90deg); width: 100px; height: 100px">
+                    100 minutes (timelapse)
+                </div>
+            </td>
+            <td>
+                <video width='100%' autoplay loop muted>
+                    <source src='/assets/vpace/vids/real/drawer/multi-sqil/25k-explore-timelapse.mp4' type='video/mp4'>
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+            <td>
+                <video width='100%' autoplay loop muted>
+                    <source src='/assets/vpace/vids/real/drawer/sqil/25k-explore-timelapse.mp4'>
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+        </tr>
+    </table>
+</div>
+{:/}
+
+### Success Examples for Training
+The numerical state data corresponding to these example success images was the only signal (i.e., no reward function and no full trajectories) used for training policies in this work.
+We also show examples from the initial state distributions.
+
+{::nomarkdown}
+<div style='text-align:center'>
+    <table>
+        <tr>
+            <!-- <td style="width: 12px; min-width:10px"></td> -->
+            <td style="width: 10px; min-width:8px"></td>
+            <td> Initial State </td>
+            <td> Reach </td>
+            <td> Grasp </td>
+            <td> Main </td>
+        </tr>
+        <tr>
+            <td style="width: 10px; min-width: 8px; max-width: 40px">
+                <!-- <div style=" transform: rotate(-90deg); white-space: nowrap"> -->
+                <div style=" transform: rotate(-90deg); width: 100px; height: 100px">
+                    Real Door
+                </div>
+            </td>
+            <td>
+                <video width='100%' autoplay loop muted>
+                    <source src='/assets/vpace/vids/real_reset_success_examples/PandaDoorNoJamAngle-reset.mp4' type='video/mp4'>
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+            <td>
+                <video width='100%' autoplay loop muted>
+                    <source src='/assets/vpace/vids/real_reset_success_examples/PandaDoorNoJamAngle-reach-suc.mp4' type='video/mp4'>
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+            <td>
+                <video width='100%' autoplay loop muted>
+                    <source src='/assets/vpace/vids/real_reset_success_examples/PandaDoorNoJamAngle-grasp-suc.mp4' type='video/mp4'>
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+            <td>
+                <video width='100%' autoplay loop muted>
+                    <source src='/assets/vpace/vids/real_reset_success_examples/PandaDoorNoJamAngle-suc.mp4' type='video/mp4'>
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 10px; min-width: 8px; max-width: 40px">
+                <!-- <div style=" transform: rotate(-90deg); white-space: nowrap"> -->
+                <div style=" transform: rotate(-90deg); width: 100px; height: 100px">
+                    Real Drawer
+                </div>
+            </td>
+            <td>
+                <video width='100%' autoplay loop muted>
+                    <source src='/assets/vpace/vids/real_reset_success_examples/PandaDrawerLine-reset.mp4' type='video/mp4'>
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+            <td>
+                <video width='100%' autoplay loop muted>
+                    <source src='/assets/vpace/vids/real_reset_success_examples/PandaDrawerLine-reach-suc.mp4' type='video/mp4'>
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+            <td>
+                <video width='100%' autoplay loop muted>
+                    <source src='/assets/vpace/vids/real_reset_success_examples/PandaDrawerLine-grasp-suc.mp4' type='video/mp4'>
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+            <td>
+                <video width='100%' autoplay loop muted>
+                    <source src='/assets/vpace/vids/real_reset_success_examples/PandaDrawerLine-suc.mp4' type='video/mp4'>
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+        </tr>
+    </table>
+</div>
+{:/}
+
+### Final Performance
+{::nomarkdown} 
+<div style='text-align:center'>
+    <table>
+        <tr>
+            <!-- <td style="width: 12px; min-width:10px"></td> -->
+            <td style="width: 10px; min-width:8px"></td>
+            <td> <font size="+1"> <b>VPACE</b> </font> </td>
+            <td> SQIL </td>
+        </tr>
+        <tr>
+            <td style="width: 10px; min-width: 8px; max-width: 40px">
+                <!-- <div style=" transform: rotate(-90deg); white-space: nowrap"> -->
+                <div style=" transform: rotate(-90deg); width: 100px; height: 100px">
+                    Real Door
+                </div>
+            </td>
+            <td>
+                <video width='100%' autoplay loop muted>
+                    <source src='/assets/vpace/vids/real/door/multi-sqil/50k-eval-1x.mp4' type='video/mp4'>
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+            <td>
+                <video width='100%' autoplay loop muted>
+                    <source src='/assets/vpace/vids/real/door/sqil/50k-eval-1x.mp4' type='video/mp4'>
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 10px; min-width: 8px; max-width: 40px">
+                <!-- <div style=" transform: rotate(-90deg); white-space: nowrap"> -->
+                <div style=" transform: rotate(-90deg); width: 100px; height: 100px">
+                    Real Drawer
+                </div>
+            </td>
+            <td>
+                <video width='100%' autoplay loop muted>
+                    <source src='/assets/vpace/vids/real/drawer/multi-sqil/25k-eval-1x.mp4' type='video/mp4'>
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+            <td>
+                <video width='100%' autoplay loop muted>
+                    <source src='/assets/vpace/vids/real/drawer/sqil/25k-eval-1x.mp4' type='video/mp4'>
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+        </tr>
+    </table>
+</div>
+{:/}
+
+## Simulation Results
+
+### Exploratory Episodes over Time
+
+#### Unstack-Stack
 {::nomarkdown}
 <div style='text-align:center'>
     <table>
@@ -108,7 +523,8 @@ nav_exclude: true
                     Your browser does not support the video tag.
                 </video>
             </td>
-            <tr>
+        </tr>   
+        <tr>
             <td style="width: 10px; min-width: 8px; max-width: 40px">
                 <!-- <div style=" transform: rotate(-90deg); white-space: nowrap"> -->
                 <div style=" transform: rotate(-90deg); width: 100px; height: 100px">
@@ -140,12 +556,11 @@ nav_exclude: true
                 </video>
             </td>
         </tr>
-        </tr>
     </table>
 </div>
 {:/}
 
-### Insert
+#### Insert
 {::nomarkdown}
 <div style='text-align:center'>
     <table>
@@ -220,7 +635,8 @@ nav_exclude: true
                     Your browser does not support the video tag.
                 </video>
             </td>
-            <tr>
+        </tr>
+        <tr>
             <td style="width: 10px; min-width: 8px; max-width: 40px">
                 <!-- <div style=" transform: rotate(-90deg); white-space: nowrap"> -->
                 <div style=" transform: rotate(-90deg); width: 100px; height: 100px">
@@ -252,12 +668,11 @@ nav_exclude: true
                 </video>
             </td>
         </tr>
-        </tr>
     </table>
 </div>
 {:/}
 
-### sawyer_drawer_open
+#### sawyer_drawer_open
 {::nomarkdown}
 <div style='text-align:center'>
     <table>
@@ -332,7 +747,8 @@ nav_exclude: true
                     Your browser does not support the video tag.
                 </video>
             </td>
-            <tr>
+        </tr>
+        <tr>
             <td style="width: 10px; min-width: 8px; max-width: 40px">
                 <!-- <div style=" transform: rotate(-90deg); white-space: nowrap"> -->
                 <div style=" transform: rotate(-90deg); width: 100px; height: 100px">
@@ -364,12 +780,11 @@ nav_exclude: true
                 </video>
             </td>
         </tr>
-        </tr>
     </table>
 </div>
 {:/}
 
-### sawyer_box_close
+#### sawyer_box_close
 {::nomarkdown}
 <div style='text-align:center'>
     <table>
@@ -444,7 +859,8 @@ nav_exclude: true
                     Your browser does not support the video tag.
                 </video>
             </td>
-            <tr>
+        </tr>
+        <tr>
             <td style="width: 10px; min-width: 8px; max-width: 40px">
                 <!-- <div style=" transform: rotate(-90deg); white-space: nowrap"> -->
                 <div style=" transform: rotate(-90deg); width: 100px; height: 100px">
@@ -476,12 +892,11 @@ nav_exclude: true
                 </video>
             </td>
         </tr>
-        </tr>
     </table>
 </div>
 {:/}
 
-### sawyer_bin_picking
+#### sawyer_bin_picking
 {::nomarkdown}
 <div style='text-align:center'>
     <table>
@@ -556,7 +971,8 @@ nav_exclude: true
                     Your browser does not support the video tag.
                 </video>
             </td>
-            <tr>
+        </tr>
+        <tr>
             <td style="width: 10px; min-width: 8px; max-width: 40px">
                 <!-- <div style=" transform: rotate(-90deg); white-space: nowrap"> -->
                 <div style=" transform: rotate(-90deg); width: 100px; height: 100px">
@@ -588,12 +1004,11 @@ nav_exclude: true
                 </video>
             </td>
         </tr>
-        </tr>
     </table>
 </div>
 {:/}
 
-### hammer-human-v0-dp
+#### hammer-human-v0-dp
 {::nomarkdown}
 <div style='text-align:center'>
     <table>
@@ -668,7 +1083,8 @@ nav_exclude: true
                     Your browser does not support the video tag.
                 </video>
             </td>
-            <tr>
+        </tr>
+        <tr>
             <td style="width: 10px; min-width: 8px; max-width: 40px">
                 <!-- <div style=" transform: rotate(-90deg); white-space: nowrap"> -->
                 <div style=" transform: rotate(-90deg); width: 100px; height: 100px">
@@ -700,12 +1116,11 @@ nav_exclude: true
                 </video>
             </td>
         </tr>
-        </tr>
     </table>
 </div>
 {:/}
 
-### relocate-human-v0-najp-dp
+#### relocate-human-v0-najp-dp
 {::nomarkdown}
 <div style='text-align:center'>
     <table>
@@ -780,7 +1195,8 @@ nav_exclude: true
                     Your browser does not support the video tag.
                 </video>
             </td>
-            <tr>
+        </tr>
+        <tr>
             <td style="width: 10px; min-width: 8px; max-width: 40px">
                 <!-- <div style=" transform: rotate(-90deg); white-space: nowrap"> -->
                 <div style=" transform: rotate(-90deg); width: 100px; height: 100px">
@@ -812,16 +1228,15 @@ nav_exclude: true
                 </video>
             </td>
         </tr>
-        </tr>
     </table>
 </div>
 {:/}
 
-## Success Examples for Training
+### Success Examples for Training
 The numerical state data corresponding to these example success images was the only signal (i.e., no reward function and no full trajectories) used for training policies in this work.
 We also show examples from the initial state distributions.
 
-### Panda Tasks
+#### Panda Tasks
 {::nomarkdown}
 <div style='text-align:center'>
     <table>
@@ -917,7 +1332,7 @@ We also show examples from the initial state distributions.
 </div>
 {:/}
 
-### Sawyer Tasks
+#### Sawyer Tasks
 {::nomarkdown}
 <div style='text-align:center'>
     <table>
@@ -1125,7 +1540,7 @@ We also show examples from the initial state distributions.
 </div>
 {:/}
 
-### Adroit Hand Tasks
+#### Adroit Hand Tasks
 The same data was used for the original and the delta-position variants.
 
 {::nomarkdown}
@@ -1239,9 +1654,9 @@ The same data was used for the original and the delta-position variants.
 </div>
 {:/}
 
-## Final Performance (All Tasks, VPACE vs. baselines)
+### Final Performance (All Tasks)
 
-### Panda Hard Tasks
+#### Panda Hard Tasks
 {::nomarkdown}
 <div style='text-align:center'>
     <table>
@@ -1385,7 +1800,7 @@ The same data was used for the original and the delta-position variants.
 </div>
 {:/}
 
-### Panda Easy Tasks
+#### Panda Easy Tasks
 {::nomarkdown} 
 <div style='text-align:center'>
     <table>
@@ -1497,7 +1912,7 @@ The same data was used for the original and the delta-position variants.
 </div>
 {:/}
 
-### Sawyer Tasks
+#### Sawyer Tasks
 {::nomarkdown} 
 <div style='text-align:center'>
     <table>
@@ -1705,7 +2120,7 @@ The same data was used for the original and the delta-position variants.
 </div>
 {:/}
 
-### Adroit Delta-Position Hand Tasks
+#### Adroit Delta-Position Hand Tasks
 {::nomarkdown} 
 <div style='text-align:center'>
     <table>
@@ -1817,7 +2232,7 @@ The same data was used for the original and the delta-position variants.
 </div>
 {:/}
 
-### Adroit Absolute-Position Hand Tasks (Original)
+#### Adroit Absolute-Position Hand Tasks (Original)
 {::nomarkdown} 
 <div style='text-align:center'>
     <table>
