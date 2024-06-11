@@ -9,7 +9,7 @@ nav_exclude: true
 # Value-Penalized Auxiliary Control from Examples **(VPACE)** for Learning without Rewards or Demonstrations
 {: .no_toc }
 
-[<i class="fa fa-github" aria-hidden="true"></i> Github](https://github.com/vpace-anon/vpace){: .btn .btn-green }
+[<i class="fa fa-github" aria-hidden="true"></i> Anonymized Code on Github](https://github.com/vpace-anon/vpace){: .btn .btn-green }
 
 ### Anonymous Author(s)<sup>1</sup>
 {: .no_toc }
