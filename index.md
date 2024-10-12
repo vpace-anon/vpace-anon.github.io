@@ -1,12 +1,12 @@
 ---
 layout: minimal
-title: VPACE for Learning without Rewards or Demonstrations (CoRL 2024) -- Alternate
-subtitle:  Value-Penalized Auxiliary Control from Examples for Learning without Rewards or Demonstrations
-description: CoRL Submission on Learning from examples (i.e. no rewards or full-trajectory demonstrations) using value-penalization and auxiliary control.
+title: VPACE for Learning without Rewards or Demonstrations (CoRL MRM-D Workshop 2024)
+subtitle:  Fast Reinforcement Learning without Rewards or Demonstrations via Auxiliary Task Examples
+description: CoRL MRM-D Submission on Learning from examples (i.e. no rewards or full-trajectory demonstrations) using value-penalization and auxiliary control.
 nav_exclude: true
 ---
 
-# Value-Penalized Auxiliary Control from Examples **(VPACE)** for Learning without Rewards or Demonstrations
+# Fast Reinforcement Learning without Rewards or Demonstrations via Auxiliary Task Examples **(VPACE)**
 {: .no_toc }
 
 [<i class="fa fa-github" aria-hidden="true"></i> Anonymized Code on Github](https://github.com/vpace-anon/vpace){: .btn .btn-green }
@@ -20,7 +20,7 @@ nav_exclude: true
     </i>
 </h5>
 
-#### Submitted to Conference on Robot Learning (CoRL) 2024
+#### Submitted to CoRL 2024 Workshop on Mastering Robot Manipulation in a World of Abundant Data
 {: .no_toc }
 
 ---
